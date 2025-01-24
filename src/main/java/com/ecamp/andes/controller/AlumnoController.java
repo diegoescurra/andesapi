@@ -18,6 +18,7 @@ public class AlumnoController {
 
     @GetMapping("/lista_alumnos")
     public List<Alumno> listarAlumnos() {
+        System.out.println("pidiendo alumnos");
         return alumnoService.listAlumnos();
     }
 
